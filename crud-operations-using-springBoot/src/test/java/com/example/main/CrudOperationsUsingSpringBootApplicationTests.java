@@ -41,7 +41,7 @@ class CrudOperationsUsingSpringBootApplicationTests {
 	@Order(2)
 	public void testGetAllEmployees() {
 		List<Employee> list = repository.findAll();
-		assertThat(list).size().isGreaterThan(0);
+		assertThat(list).isNotEmpty();
 	}
 
 	@Test
